@@ -7,6 +7,22 @@ public class Apples {
     private Double pricePerLb;
     private int amount;
 
+    public Apples(int expectedid, Double expectedWeight, String expectedRipeness, Double expectedPrice, int expectedAmount) {
+        this.id = expectedid;
+        this.weightinLbs = expectedWeight;
+        this.ripeness = expectedRipeness;
+        this.pricePerLb = expectedPrice;
+        this.amount = expectedAmount;
+    }
+
+    public Apples() {
+        this.id = 0;
+        this.weightinLbs = 0.0;
+        this.ripeness = "Green";
+        this.pricePerLb = 0.0;
+        this.amount = 0;
+    }
+
     public void setId(int id) {
         this.id = id;
     }

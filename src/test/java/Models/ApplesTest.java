@@ -58,4 +58,23 @@ public class ApplesTest {
         //then
         Assertions.assertEquals(expected,testApples.getAmount());
     }
+
+    @Test
+    public void AppleConstructorTest(){
+        //given
+        int expectedid = 1;
+        Double expectedWeight = 3.5;
+        String expectedRipeness = "Red";
+        Double expectedPrice = 4.0;
+        int expectedAmount = 4;
+        //when
+        Apples test = new Apples(expectedid,expectedWeight,
+                expectedRipeness,expectedPrice,expectedAmount);
+        //then
+        Assertions.assertEquals(expectedid,test.getId());
+        Assertions.assertEquals(expectedWeight, test.getWeightinLbs());
+        Assertions.assertEquals(expectedRipeness, test.getRipeness());
+        Assertions.assertEquals(expectedPrice, test.getPricePerLb());
+        Assertions.assertEquals(expectedAmount, test.getAmount());
+    }
 }
