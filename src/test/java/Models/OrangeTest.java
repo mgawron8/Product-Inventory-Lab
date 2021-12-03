@@ -3,16 +3,17 @@ package Models;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class ApplesTest {
+public class OrangeTest {
+
     @Test
     public void setidTest(){
         //given
         int expected = 1;
         //when
-        Apples testApples = new Apples();
-        testApples.setId(expected);
+        Orange testOrange = new Orange();
+        testOrange.setId(expected);
         //then
-        Assertions.assertEquals(expected,testApples.getId());
+        Assertions.assertEquals(expected,testOrange.getId());
     }
 
     @Test
@@ -20,10 +21,10 @@ public class ApplesTest {
         //given
         Double expected = 3.4;
         //when
-        Apples testApples = new Apples();
-        testApples.setWeightinLbs(expected);
+        Orange testOrange = new Orange();
+        testOrange.setWeightinLbs(expected);
         //then
-        Assertions.assertEquals(expected, testApples.getWeightinLbs());
+        Assertions.assertEquals(expected, testOrange.getWeightinLbs());
     }
 
     @Test
@@ -31,10 +32,10 @@ public class ApplesTest {
         //given
         String expected = "Green";
         //when
-        Apples testApples = new Apples();
-        testApples.setRipeness(expected);
+        Orange testOrange = new Orange();
+        testOrange.setRipeness(expected);
         //then
-        Assertions.assertEquals(expected,testApples.getRipeness());
+        Assertions.assertEquals(expected,testOrange.getRipeness());
     }
 
     @Test
@@ -42,10 +43,10 @@ public class ApplesTest {
         //given
         Double expected = 2.99;
         //when
-        Apples testApples = new Apples();
-        testApples.setPricePerLb(expected);
+        Orange testOrange = new Orange();
+        testOrange.setPricePerLb(expected);
         //then
-        Assertions.assertEquals(expected,testApples.getPricePerLb());
+        Assertions.assertEquals(expected,testOrange.getPricePerLb());
     }
 
     @Test
@@ -53,22 +54,22 @@ public class ApplesTest {
         //given
         int expected = 4;
         //when
-        Apples testApples = new Apples();
-        testApples.setAmount(expected);
+        Orange testOrange = new Orange();
+        testOrange.setAmount(expected);
         //then
-        Assertions.assertEquals(expected,testApples.getAmount());
+        Assertions.assertEquals(expected,testOrange.getAmount());
     }
 
     @Test
-    public void AppleConstructorTest(){
+    public void OrangeConstructorTest(){
         //given
         int expectedid = 1;
         Double expectedWeight = 3.5;
-        String expectedRipeness = "Red";
+        String expectedRipeness = "Orange";
         Double expectedPrice = 4.0;
         int expectedAmount = 4;
         //when
-        Apples test = new Apples(expectedid,expectedWeight,
+        Orange test = new Orange(expectedid,expectedWeight,
                 expectedRipeness,expectedPrice,expectedAmount);
         //then
         Assertions.assertEquals(expectedid,test.getId());

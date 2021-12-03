@@ -1,13 +1,13 @@
 package Models;
 
-public class Oranges {
+public class Orange {
     private int id;
     private Double weightinLbs;
     private String ripeness;
     private Double pricePerLb;
     private int amount;
 
-    public Oranges(int expectedid, Double expectedWeight, String expectedRipeness, Double expectedPrice, int expectedAmount) {
+    public Orange(int expectedid, Double expectedWeight, String expectedRipeness, Double expectedPrice, int expectedAmount) {
         this.id = expectedid;
         this.weightinLbs = expectedWeight;
         this.ripeness = expectedRipeness;
@@ -15,7 +15,7 @@ public class Oranges {
         this.amount = expectedAmount;
     }
 
-    public Oranges() {
+    public Orange() {
         this.id = 0;
         this.weightinLbs = 0.0;
         this.ripeness = "Green";
